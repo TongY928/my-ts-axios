@@ -7,7 +7,7 @@ interface urlOrigin {
 
 export function isAbsoluteURL (url: string): boolean {
   // 以 http 或者 https 开头的为绝对 url
-  return /(^[a-z][a-z\d\+\-\.]*:)?\/\//i.test(url)
+  return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url)
 }
 
 export function combineURL (baseURL: string, relativeURL?: string): string {

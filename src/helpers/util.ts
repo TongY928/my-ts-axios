@@ -20,7 +20,7 @@ export function encode (val: string): string {
   return encodeURIComponent(val)
     .replace(/%40/g, '@')
     .replace(/%3A/ig, ':')
-    .replace(/$24/g, '$')
+    .replace(/%24/g, '$')
     .replace(/%2C/ig, ',')
     // 空格变加号
     .replace(/%20/g, '+')
